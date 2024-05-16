@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+    <div  *ngIf="login">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="myweb">
+          <label class="">
+            Name:
+            </label>
+            <br>
+            <input  formControlName="name"  placeholder="Your name" required>
+  
+  
+        <br>
+  
+          <label>
+            Email:
+            </label>
+           <br>
+            <input formControlName="email" placeholder="Your email" required>
+  
+  
+        <br>
+  
+          <label>
+            password:
+            </label>
+            <br>
+            <input formControlName="password" placeholder="Your password" required>
+      <br>
+        <br>
+        <button type="submit" class="btn">Send</button><br>
+  
+          <p >Create an account?</p>
+      </div>
+      </form>
+    </div>
+    <div *ngIf="signup">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" >
+          <div class="site">
+          <label>Enter full name</label><br>
+          <input type="text" class="name" placeholder="enter full name*"><br>
+          <label>Enter email</label><br>
+          <input type="text" class="email" placeholder="enter email*"><br>
+          <label>phone number</label><br>
+          <input type="number" class="phoneno" placeholder="phoneNo*"><br>
+          <label>Enter age</label><br>
+          <input type="number" class="age" placeholder="age*"><br>
+          <label>upload photo</label><br>
+          <input type="file"><br>
+          <br>
+          <button type="button" class="butn">submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

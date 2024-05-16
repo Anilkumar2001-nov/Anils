@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first"></h1>
+    <h1 id="Second"></h1>
+    <button type="button" onclick="logic()">Submit</button>
+    <script>
+        function login(){
+            alert("clicked")
+        }
+        var a=10
+        let b=20
+        const c="bye"
+         console.log(a)
+         console.log(b)
+         console.log(c)
+         var d=a+b;
+       
+      
+
+
+
+         if(a==10 ){
+            console.log("true")
+
+         }else if(a==20){
+            console.log("second if true")
+         }else if(a==30){
+            document.getElementById("first").innerHTML=d
+         document.getElementById("Second").innerHTML=c
+         }else{
+            console.log("all falase")
+         }
+       
+
+
+         if((a==10)&&(b==20)){
+            console.log("true both")
+         }else{
+            console.log("all false")
+         }
+
+         if((a==10)||(b==20)){
+            console.log("true both11")
+         }else{
+            console.log("all false")
+         }
+
+
+         switch(a){
+            case 1:
+                console.log("a")
+            break;
+            case 10:
+                console.log("10")
+            break;
+
+            case 30:
+                console.log("30")
+            break;
+            default:
+                console.log("default")
+         }
+//CLASS===02
+
+      //    for(let i=0;i<=10;i++)
+      //    {
+      //       var notprime=false;
+      //       for(var j=2;j<=i;j++)
+      //       {
+      //           if(i%j==0 && j!==i){
+      //           notprime=true;
+      //       }
+      //    }if(notprime===false){
+      //       console.log(i);
+      //    }
+      //   }
+        var k=0;
+        while(k>10){
+         console.log(k)
+         k++;
+
+        }
+       
+ 
+let i =2; n=0;
+while(i <= n){ 
+   var notprime=false;
+  let j=2;
+  while(j < i - 1){
+    if(i % j == 0 && j!==1){
+       notprime=false;
+      // break;
+    }
+    j++;
+  }
+  if(notprime=false){
+   
+    console.log(i);
+  }
+  isPrime = true;
+  i++;
+}
+
+
+
+
+
+// CLASS-03
+
+
+
+//array
+let arr=["anil",372,"kumar"]
+ console.log(arr)
+ console.log(arr[0])
+ console.log(arr[1])
+
+ //object
+  var obj={
+   name : 'anil',
+   SNo : '21'
+
+  }
+  console.log(obj)
+  console.log(obj.name)
+
+  //json
+  let js=[
+   {
+      name:'anil',
+      sno:'371'
+   },
+   {
+      name:'bittu',
+      sno:'100'
+   }
+  ]
+console.log(js)
+console.log(js[0].name)
+console.log(js[0].sno)
+
+
+
+//CLASS==04
+
+
+
+    </script>
+</body>
+</html>

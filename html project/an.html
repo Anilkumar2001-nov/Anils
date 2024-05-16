@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array
+    let arr=["anil", 21,"kumar"]
+    console.log(arr)
+//  console.log(arr[0])
+//  console.log(arr[1])
+
+//ForEach (array)
+    arr.forEach((res)=>{
+        console.log(res)
+    })
+
+ //object
+ var obj={
+   name : 'anil',
+   SNo : '21'
+
+  }
+  console.log(obj)
+  console.log(obj.name)
+
+
+  //JSon
+  let js=[
+   {
+      name:'anil',
+      sno:'371'
+   },
+   {
+      name:'bittu',
+      sno:'100'
+   },
+   {
+    name:'laddu',
+    sno:'23'
+   }
+  ]
+console.log(js)
+// console.log(js[0].name)
+// console.log(js[0].sno)
+
+//mapping
+js.map((response)=>{
+    console.log(response)
+    console.log(response.sno)
+    console.log(response.name)
+})
+var apidata=fetch("https://randomuser.me/api/?result=10").then(res=>res.json().then((res)=>{
+    console.log(res)
+}))
+    </script>
+
+</body>
+</html>
